@@ -43,7 +43,6 @@ const UserList: React.FC<UserListProps> = ({ users, onDelete, onEdit }) => {
     <div className="bg-white shadow-md rounded-lg p-4 overflow-auto">
       <h2 className="text-lg font-semibold mb-2 text-gray-900">{ LANG.userList.title }</h2>
 
-      {/* Componente de filtro */}
       <UserFilter onFilter={setFilteredUsers} users={users} />
 
       <table className="w-full border-collapse border border-gray-300  overflow-auto">
